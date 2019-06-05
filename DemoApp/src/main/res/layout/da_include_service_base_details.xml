@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/da_content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMediumBold"
+            android:id="@+id/service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/da_grey_light"
+            android:padding="@dimen/da_padding_half"
+            tools:text="XXX Information"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/da_padding_half">
+
+            <TextView
+                style="@style/da_TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/service_hardware_firmware"
+                android:paddingEnd="@dimen/da_padding_half"
+                android:text="@string/da_service_details_base_hw_fw_label" />
+
+            <TextView
+                android:id="@+id/service_hardware_firmware"
+                style="@style/da_TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                tools:text="1.0.0.0/1.0.0.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/da_padding_half">
+
+            <TextView
+                style="@style/da_TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/service_value"
+                android:paddingEnd="@dimen/da_padding_half"
+                android:text="@string/da_service_details_base_value_label" />
+
+            <TextView
+                android:id="@+id/service_value"
+                style="@style/da_TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                tools:text="7f" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/da_padding_half">
+
+            <TextView
+                style="@style/da_TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/service_format"
+                android:paddingEnd="@dimen/da_padding_half"
+                android:text="@string/da_service_details_base_mode_label" />
+
+            <TextView
+                android:id="@+id/service_mode"
+                style="@style/da_TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                tools:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/service_format_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/da_padding_half">
+
+            <TextView
+                style="@style/da_TextMediumClickable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/service_format"
+                android:paddingEnd="@dimen/da_padding_half"
+                android:text="@string/da_service_details_base_format_label" />
+
+            <TextView
+                android:id="@+id/service_format"
+                style="@style/da_TextMicroClickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Unit: SI, Delta: 30" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_send_read_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/da_padding_half"
+            android:layout_marginStart="@dimen/da_padding_half"
+            android:layout_marginEnd="@dimen/da_padding_half"
+            android:text="@string/da_service_details_base_send_read_request_button" />
+
+        <Button
+            android:id="@+id/button_reset_sensor_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/da_padding_half"
+            android:text="@string/da_service_details_base_request_sensor_state_button" />
+
+    </LinearLayout>
+</ScrollView>

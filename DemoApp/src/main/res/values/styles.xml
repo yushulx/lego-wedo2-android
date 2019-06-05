@@ -1,0 +1,47 @@
+<resources>
+    <style name="da_TextBase">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/da_grey</item>
+    </style>
+
+    <style name="da_TextTiny" parent="da_TextBase">
+        <item name="android:textSize">@dimen/da_text_tiny</item>
+    </style>
+
+    <style name="da_TextMicro" parent="da_TextBase">
+        <item name="android:textSize">@dimen/da_text_micro</item>
+    </style>
+
+    <style name="da_TextMicroClickable" parent="da_TextMicro">
+        <item name="android:textColor">@color/da_black</item>
+    </style>
+
+    <style name="da_TextSmall" parent="da_TextBase">
+        <item name="android:textSize">@dimen/da_text_small</item>
+    </style>
+
+    <style name="da_TextSmallBold" parent="da_TextSmall">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="da_TextMedium" parent="da_TextBase">
+        <item name="android:textSize">@dimen/da_text_medium</item>
+    </style>
+
+    <style name="da_TextMediumBold" parent="da_TextMedium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="da_TextMediumClickable" parent="da_TextMedium">
+        <item name="android:textColor">@color/da_black</item>
+    </style>
+
+    <style name="da_TextLarge" parent="da_TextBase">
+        <item name="android:textSize">@dimen/da_text_large</item>
+    </style>
+
+    <style name="da_TextHuge" parent="da_TextBase">
+        <item name="android:textSize">@dimen/da_text_huge</item>
+    </style>
+
+</resources>

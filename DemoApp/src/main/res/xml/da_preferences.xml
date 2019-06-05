@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- default value is a boolean -->
+    <CheckBoxPreference
+        android:title="@string/da_discovery_settings_auto_reconnect"
+        android:key="@string/da_discovery_settings_auto_reconnect_key"
+        android:defaultValue="@bool/da_pref_default_auto_reconnect"/>
+
+    <dk.lego.demo.settings.IntEditTextPreference
+        android:title="@string/da_discovery_settings_rssi_threshold"
+        android:key="@string/da_discovery_settings_rssi_threshold_key"
+        android:inputType="number"
+        android:defaultValue="@integer/da_pref_default_rssi_threshold"/>
+</PreferenceScreen>

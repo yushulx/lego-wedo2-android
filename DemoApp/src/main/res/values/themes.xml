@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <style name="da_Theme.DemoApp" parent="android:Theme.Holo.Light.DarkActionBar">
+            <item name="android:windowBackground">@color/da_main_background</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <item name="android:actionBarStyle">@style/da_ActionBar</item>
+            <item name="android:actionBarItemBackground">@drawable/da_selector_actionbar_item</item>
+        </style>
+</resources>

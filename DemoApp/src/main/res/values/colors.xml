@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="da_main_background">#ececec</color>
+    <color name="da_black">#000000</color>
+    <color name="da_white">#ffffff</color>
+    <color name="da_grey">#444444</color>
+    <color name="da_grey_light">#cccccc</color>
+    <color name="da_grey_medium">#888888</color>
+
+    <color name="da_actionbar_background">#000000</color>
+    <color name="da_actionbar_selector_pressed">#33ececec</color>
+</resources>

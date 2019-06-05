@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="da_padding_half">8dp</dimen>
+    <dimen name="da_padding">16dp</dimen>
+
+    <dimen name="da_text_tiny">8sp</dimen>
+    <dimen name="da_text_micro">10sp</dimen>
+    <dimen name="da_text_small">12sp</dimen>
+    <dimen name="da_text_medium">16sp</dimen>
+    <dimen name="da_text_large">20sp</dimen>
+    <dimen name="da_text_huge">24sp</dimen>
+</resources>

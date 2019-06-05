@@ -1,0 +1,175 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMediumBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/da_grey_light"
+            android:padding="@dimen/da_padding_half"
+            android:text="@string/da_service_details_piezo_header"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/da_padding_half"
+            android:weightSum="5">
+
+            <TextView
+                style="@style/da_TextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:labelFor="@+id/da_service_details_piezo_frequenzy"
+                android:paddingEnd="@dimen/da_padding_half"
+                android:text="@string/da_service_details_piezo_frequenzy_label" />
+
+            <EditText
+                android:id="@+id/da_service_details_piezo_frequenzy"
+                style="@style/da_TextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:inputType="number"
+                android:maxLines="1"
+                tools:text="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/da_padding_half"
+            android:weightSum="5">
+
+            <TextView
+                style="@style/da_TextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:labelFor="@+id/da_service_details_piezo_duration"
+                android:paddingEnd="@dimen/da_padding_half"
+                android:text="@string/da_service_details_piezo_duration_label" />
+
+            <EditText
+                android:id="@+id/da_service_details_piezo_duration"
+                style="@style/da_TextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:inputType="number"
+                android:maxLines="1"
+                tools:text="100" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/da_service_details_piezo_button_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/da_padding_half"
+            android:layout_marginStart="@dimen/da_padding_half"
+            android:layout_marginTop="@dimen/da_padding_half"
+            android:text="@string/da_service_details_piezo_play_button" />
+
+        <Button
+            android:id="@+id/da_service_details_piezo_button_sequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/da_padding_half"
+            android:layout_marginStart="@dimen/da_padding_half"
+            android:layout_marginTop="@dimen/da_padding_half"
+            android:text="@string/da_service_details_piezo_sequence" />
+
+        <Button
+            android:id="@+id/da_service_details_piezo_button_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/da_padding_half"
+            android:text="@string/da_service_details_piezo_stop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/da_grey_light"
+            android:orientation="vertical"
+            android:padding="@dimen/da_padding_half">
+
+            <TextView
+                style="@style/da_TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/da_grey_light"
+                android:padding="@dimen/da_padding_half"
+                android:text="@string/da_service_details_piezo_note_description" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/da_service_details_piezo_button_note_c"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="@string/da_service_details_piezo_note_c" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/da_service_details_piezo_button_note_d"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="@string/da_service_details_piezo_note_d" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/da_service_details_piezo_button_note_e"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="@string/da_service_details_piezo_note_e" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/da_service_details_piezo_button_note_f"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="@string/da_service_details_piezo_note_f" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/da_service_details_piezo_button_note_g"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="@string/da_service_details_piezo_note_g" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/da_service_details_piezo_button_note_a"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="@string/da_service_details_piezo_note_a" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

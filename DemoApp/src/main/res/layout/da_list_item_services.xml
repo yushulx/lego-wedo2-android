@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/da_padding">
+
+    <LinearLayout
+        android:id="@+id/name_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:id="@+id/name"
+        style="@style/da_TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/da_padding_half"
+        tools:text="Title"/>
+
+        <TextView
+            android:id="@+id/unit"
+            style="@style/da_TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="(RAW)"/>
+
+        <TextView
+            android:id="@+id/value"
+            style="@style/da_TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text=": 03"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_wrapper"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_label"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_service_overview_id_divider_label"/>
+
+        <TextView
+            android:id="@+id/id_value"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/da_padding_half"
+            tools:text="1"/>
+
+        <TextView
+            android:id="@+id/hub_label"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_service_overview_hub_divider_label"/>
+
+        <TextView
+            android:id="@+id/hub_value"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/da_padding_half"
+            tools:text="1"/>
+
+        <TextView
+            android:id="@+id/type_label"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_service_overview_id_type_label"/>
+
+        <TextView
+            android:id="@+id/type_value"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="35"/>
+        </LinearLayout>
+</RelativeLayout>

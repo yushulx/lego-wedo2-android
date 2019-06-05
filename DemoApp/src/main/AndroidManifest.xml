@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dk.lego.demo" >
+
+    <!-- Required by TPA -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:name="dk.lego.demo.base.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/da_ic_launcher"
+        android:label="@string/da_app_name"
+        android:theme="@style/da_Theme.DemoApp"
+
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".discovery.DiscoveryActivity"
+            android:label="@string/da_app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".settings.DiscoverySettingsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.device.DeviceConnectedActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name=".service.ServiceBaseInputFormatDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.device.DeviceDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.service.ServiceGenericDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.service.ServiceCurrentDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.service.ServiceVoltageDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.service.ServiceMotorDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.service.ServiceMotionSensorDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.service.ServicePiezoDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.service.ServiceRGBLightDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.service.ServiceTiltSensorDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+
+        <activity android:name="dk.lego.demo.windmill.WindmillTestActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+    </application>
+</manifest>

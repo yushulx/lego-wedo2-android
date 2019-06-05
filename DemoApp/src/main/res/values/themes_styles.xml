@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="da_ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:actionBarItemBackground">@drawable/da_selector_actionbar_item</item>
+        <item name="android:background">@color/da_actionbar_background</item>
+        <item name="android:titleTextStyle">@style/da_ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="da_ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/da_white</item>
+    </style>
+</resources>

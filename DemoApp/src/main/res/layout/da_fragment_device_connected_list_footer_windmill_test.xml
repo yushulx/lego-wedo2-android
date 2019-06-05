@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/battery_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/da_padding">
+
+    <Button
+        android:id="@+id/button_perform_windmill_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/da_device_connected_perform_windmill_test"/>
+</RelativeLayout>

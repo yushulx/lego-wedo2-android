@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMediumBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/da_grey_light"
+            android:padding="@dimen/da_padding_half"
+            android:text="@string/da_service_details_motor_header"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/da_padding_half">
+
+            <TextView
+                android:id="@+id/motor_power_status"
+                style="@style/da_TextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingEnd="@dimen/da_padding_half"
+                tools:text="Motor right 1" />
+
+            <SeekBar
+                android:id="@+id/motor_seek_bar_power"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:progress="0"
+                android:max="100"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="5"
+            android:padding="@dimen/da_padding_half">
+
+            <TextView
+                style="@style/da_TextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:labelFor="@+id/button_left"
+                android:paddingEnd="@dimen/da_padding_half"
+                android:text="@string/da_service_details_motor_direction_label" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <Button
+                    android:id="@+id/button_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/button_right"
+                    android:text="@string/da_service_details_motor_direction_left_button"
+                    android:textSize="@dimen/da_text_small" />
+
+                <Button
+                    android:id="@+id/button_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:text="@string/da_service_details_motor_direction_right_button"
+                    android:textSize="@dimen/da_text_small" />
+                </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_brake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/da_padding_half"
+            android:layout_marginStart="@dimen/da_padding_half"
+            android:layout_marginEnd="@dimen/da_padding_half"
+            android:text="@string/da_service_details_motor_brake_button" />
+
+        <Button
+            android:id="@+id/button_drift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/da_padding_half"
+            android:text="@string/da_service_details_motor_drift_button" />
+    </LinearLayout>
+</ScrollView>

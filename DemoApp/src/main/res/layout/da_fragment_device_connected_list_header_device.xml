@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="@dimen/da_padding">
+
+    <TextView
+        android:id="@+id/device_name"
+        style="@style/da_TextMediumClickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Device Name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/device_fw_label"
+            style="@style/da_TextMicroClickable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_connected_firmware_divider_label" />
+
+        <TextView
+            android:id="@+id/device_fw_value"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/da_padding_half"
+            tools:text="1.0.0" />
+
+        <TextView
+            android:id="@+id/device_hw_label"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_connected_hardware_divider_label" />
+
+        <TextView
+            android:id="@+id/device_hw_value"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/da_padding_half"
+            tools:text="2.0.0" />
+
+        <TextView
+            android:id="@+id/device_sw_label"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_connected_software_divider_label" />
+
+        <TextView
+            android:id="@+id/device_sw_value"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/da_padding_half"
+            tools:text="3.0.0" />
+
+        <TextView
+            android:id="@+id/device_manufacturer_label"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_connected_manufacturer_divider_label" />
+
+        <TextView
+            android:id="@+id/device_manufacturer_value"
+            style="@style/da_TextMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Lego Systems A/S" />
+    </LinearLayout>
+</LinearLayout>

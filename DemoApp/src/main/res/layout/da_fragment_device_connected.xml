@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/da_device_connection_title"
+        style="@style/da_TextMediumBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/da_grey_light"
+        android:padding="@dimen/da_padding_half" />
+
+    <RelativeLayout
+        android:id="@id/da_content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <ListView
+         android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/da_include_progress_loader" />
+</LinearLayout>

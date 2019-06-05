@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/da_TextMediumBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/da_grey_light"
+        android:padding="@dimen/da_padding_half"
+        android:textAllCaps="true"
+        android:text="@string/da_device_details_name_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/da_padding_half"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/da_TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/da_padding_half"
+            android:labelFor="@+id/device_name_edit"
+            android:text="@string/da_device_details_name_label"/>
+
+        <EditText
+            style="@style/da_TextMedium"
+            android:id="@+id/device_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/device_button_update_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/da_padding_half"
+        android:text="@string/da_device_details_send_update_button"/>
+
+    <TextView
+        style="@style/da_TextMediumBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/da_grey_light"
+        android:padding="@dimen/da_padding_half"
+        android:textAllCaps="true"
+        android:text="@string/da_device_details_info_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/da_padding_half"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_details_firmware_label"/>
+
+        <TextView
+            style="@style/da_TextMicro"
+            android:id="@+id/device_info_fw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="0.0.23.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/da_padding_half"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_details_hardware_label"/>
+
+        <TextView
+            style="@style/da_TextMicro"
+            android:id="@+id/device_info_hw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="0.0.3.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/da_padding_half"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_details_software_label"/>
+
+        <TextView
+            style="@style/da_TextMicro"
+            android:id="@+id/device_info_sw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="0.0.50.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/da_padding_half"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_details_manufacturer_label"/>
+
+        <TextView
+            style="@style/da_TextMicro"
+            android:id="@+id/device_info_manufacturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="LEGO Systems A/S"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/da_padding_half"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_details_battery_level_label"/>
+
+        <TextView
+            style="@style/da_TextMicro"
+            android:id="@+id/device_info_battery_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="24%"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/da_padding_half"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_device_details_button_state_label"/>
+
+        <TextView
+            style="@style/da_TextMicro"
+            android:id="@+id/device_info_button_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Pressed"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="da_preference_file_key">dk.lego.demo.PREFERENCE_FILE_KEY</string>
+
+    <string name="da_discovery_settings_rssi_threshold_key">PREF_RSSI_THRESHOLD</string>
+    <string name="da_discovery_settings_auto_reconnect_key">PREF_AUTO_RECONNECT</string>
+
+    <bool name="da_pref_default_auto_reconnect">false</bool>
+    <integer name="da_pref_default_rssi_threshold">-150</integer>
+</resources>

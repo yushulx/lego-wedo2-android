@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="da_content_frame" type="id"/>
+    <item name="da_loader_frame" type="id"/>
+    <item name="da_spinner_frame" type="id"/>
+    <item name="da_no_data_frame" type="id"/>
+</resources>

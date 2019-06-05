@@ -1,0 +1,66 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMediumBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/da_grey_light"
+            android:padding="@dimen/da_padding_half"
+            android:text="@string/da_service_details_tilt_header"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/da_padding_half">
+
+            <TextView
+                style="@style/da_TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/service_value"
+                android:paddingEnd="@dimen/da_padding_half"
+                android:text="@string/da_service_details_tilt_mode_label" />
+
+            <TextView
+                android:id="@+id/da_service_details_tilt_mode"
+                style="@style/da_TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                tools:text="Tilt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/da_padding_half">
+
+            <TextView
+                style="@style/da_TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/service_value"
+                android:paddingEnd="@dimen/da_padding_half"
+                android:text="@string/da_service_details_tilt_value_label" />
+
+            <TextView
+                android:id="@+id/da_service_details_tilt_value"
+                style="@style/da_TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                tools:text="Left" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

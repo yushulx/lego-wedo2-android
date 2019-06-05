@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/da_TextMediumBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/da_grey_light"
+            android:padding="@dimen/da_padding_half"
+            android:text="@string/da_service_details_rgb_header"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:id="@+id/da_service_details_rgb_button_discrete_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/da_padding_half"
+            android:weightSum="6"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/service_details_rgb_color_index"
+                style="@style/da_TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="4"
+                android:text="@string/da_service_details_rgb_color_index_label" />
+
+            <Button
+                android:id="@+id/service_details_rgb_color_index_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/service_details_rgb_color_index_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/da_service_details_rgb_button_absolute_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/da_padding_half"
+                android:weightSum="5">
+
+                <TextView
+                    style="@style/da_TextMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingEnd="@dimen/da_padding_half"
+                    android:text="@string/da_service_details_rgb_seek_bar_red_label" />
+
+                <SeekBar
+                    android:id="@+id/service_details_rgb_seek_bar_red"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:max="255"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/da_padding_half"
+                android:weightSum="5">
+
+                <TextView
+                    style="@style/da_TextMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingEnd="@dimen/da_padding_half"
+                    android:text="@string/da_service_details_rgb_seek_bar_green_label" />
+
+                <SeekBar
+                    android:id="@+id/service_details_rgb_seek_bar_green"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:max="255"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/da_padding_half"
+                android:weightSum="5">
+
+                <TextView
+                    style="@style/da_TextMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingEnd="@dimen/da_padding_half"
+                    android:text="@string/da_service_details_rgb_seek_bar_blue_label" />
+
+                <SeekBar
+                    android:id="@+id/service_details_rgb_seek_bar_blue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:max="255"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/da_TextSmallBold"
+                android:id="@+id/service_details_rgb_color_sample"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="@dimen/da_padding_half"
+                android:layout_marginStart="@dimen/da_padding_half"
+                android:gravity="center"
+                android:text="@string/da_service_details_rgb_color_sample"/>
+
+            <Button
+                android:id="@+id/da_service_details_rgb_button_write_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/da_padding_half"
+                android:layout_marginStart="@dimen/da_padding_half"
+                android:layout_marginTop="@dimen/da_padding_half"
+                android:text="@string/da_service_details_rgb_write_color_button" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/da_service_details_rgb_button_switch_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/da_padding_half"
+            android:layout_marginStart="@dimen/da_padding_half"
+            android:layout_marginTop="@dimen/da_padding_half"
+            android:text="@string/da_service_details_rgb_witch_off_button" />
+
+        <Button
+            android:id="@+id/da_service_details_rgb_button_switch_to_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/da_padding_half"
+            android:layout_marginStart="@dimen/da_padding_half"
+            android:layout_marginTop="@dimen/da_padding_half"
+            android:text="@string/da_service_details_rgb_switch_to_default_button" />
+
+    </LinearLayout>
+</ScrollView>
